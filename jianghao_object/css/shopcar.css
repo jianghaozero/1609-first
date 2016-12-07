@@ -1,0 +1,43 @@
+
+		#outside,#outside_2{width: 980px;margin: 0 auto;}
+		#shopcar_head{padding: 20px 0 30px;}
+		#shopcar_head>a>img{padding: 10px 0;}
+		.shopcar_head_right{float: right;}
+		.shopcar_head_right_top{margin-top: 10px;}
+		.shopcar_head_right_bottom{margin-top: 20px;text-align: right;}
+		.shopcar_body_head{border-bottom: solid 1px #D7D7D7;}
+		.shopcar_body_head:after{content: "";display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}
+		.left_h{float: left;font: bold 14px;}
+		.shopcar_body{position: relative;}
+		/*购物车主题*/
+		.gwc{ width:980px;overflow:hidden;position: relative;min-height: 180px;}
+		.gwc_tb1{ width:781px; height:32px; overflow:hidden;float: left;}
+		.tb1_td1{ width:30px; text-align:center;}
+		.tb1_td3{ width:375px; text-align:left;}
+		.tb1_td4{ width:100px; text-align:center;}
+		.tb1_td5{ width:70px; text-align:center;}
+		.tb1_td6{ width:96px; text-align:center;}
+		.tb1_td7{ text-align:center;}
+		
+		.gwc_tb2{ width:781px; border:1px solid #e5e5e5; padding:15px 0;float: left;}
+		.tb2_td1{ width:60px; text-align:center;}
+		.tb2_td2{ width:80px; text-align:center;}
+		.tb2_td3{ width:259px; padding-left:12px; padding-right:18px;}
+		.tb2_td3 a{ font-size:14px; line-height:22px;}
+		.good_delet{cursor: pointer;}
+		.td_min,.td_add{width:10px; height:18px;border:1px solid #ccc;}
+		.tot{color:#ff5500;font-size:14px; font-weight:bold;}
+		.val_text{width:20px; text-align:center; border:1px solid #ccc;}
+		.zong{color:#ff5500;font-size:14px; font-weight:bold;}
+		
+		.gwc_zong{position: absolute;right: 0;width: 178px;height: 180px;padding: 30px 5px 0;border: solid 1px #D7D7D7;}
+		.gwc_zong>div{margin-bottom: 10px;}
+		.jiesuan_2{width:100px; height:46px; line-height:46px; text-align:center; font-size:18px; color:#fff; background:#CCCCCC;float: left;}
+		/*底部*/
+		.shopcar_foot{border: solid 1px #D7D7D7;}
+		.shopcar_foot_head{font: bold 15px "微软雅黑";line-height: 32px;text-indent: 30px;color: #FF6600;border-bottom: solid 3px #D7D7D7;}
+		.shopcar_foot_body{overflow: hidden;padding: 20px 20px 15px;}
+		.shopcar_foot_body>ul>li{width: 180px;padding: 0 15px;float: left;}
+		.shopcar_foot_body>ul>li>a{line-height: 20px;}
+		.shopcar_foot_body_li_price{font: bold 15px "微软雅黑";margin: 30px 0 20px;color: #FF6600;}
+		.shopcar_foot_body>ul>li>div{line-height: 25px;padding: 0 10px;border: solid 1px #262626;cursor: pointer;float: left;margin-left: 30px;}

@@ -1,0 +1,1280 @@
+
+		<style>
+			/*公共部分*/
+			ul{margin: 0;}
+			p{margin-bottom: 0;}
+			#headTop{background: #f1f1f1;border-bottom: solid 1px #e2e2e2;line-height: 24px;}
+			body{font-size: 12px;}
+			.headTop,#headbody,.headfoot{width: 1200px;margin: 0 auto;}
+			/*头部顶部*/
+			.headTop a{color: #484848;}
+			.headTop:after{display: block;content: "";height: 0;overflow: hidden;clear: both;visibility: hidden;}
+			.leftul li{float: left;padding: 0 5px;}
+			.topRight{float: right;}
+			.topRight .user{float: left; margin-right: 10px;}
+			.topRight .user b{margin: 0 5px;}
+			.topRight .usera{margin-right: 10px;}
+			.topRight .myuse{float: left;}
+			.topRight .myuse li{float: left; padding: 0 5px;}
+			.topRight .myuse .mynew{position: relative;}
+			.myuse .mynew a{padding: 0 6px 0 6px;}
+			.myuse .mynew i{padding-right: 6px;}
+			.hidden_1,.hidden_2{position:absolute;right: -1px;top:23px;padding: 3px 10px 6px;white-space: nowrap;min-width: 95px;background-color: #FFF;
+								border: 1px solid #EEE;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);display: none;z-index: 1;}
+			.hidden_1 a{color:#039;}
+			.myuse .mynew:hover{background: white;}
+			.myuse .mynew:hover .hidden_1{display: block;}
+			.hidden_2 p{line-height: 18px; text-align: center;}
+			.mynew .hidden_2_a a{color: white;background: #4F9EE7;line-height: 25px;padding: 5px 6px;}
+			.pfist{font-size: 14px; color: #FE7B23; font-weight: bold;}
+			.psecond{color: black;font-weight: bold;}
+			.myuse .mynew:hover .hidden_2{display: block;}
+			/*头部中间*/
+			#headbody{position: relative;}
+			#headbody:after{display: block;content: "";height: 0;overflow: hidden;clear: both;visibility: hidden;}
+			.logo{float: left; padding: 11px 0 0 4px;}
+			.sevenday{float: right;}
+			.search{position: absolute;top: 18px;height: 34px;left: 368px;}
+			.searchinput {height: 34px;border: 2px solid #F60;float: left;line-height: 30px;width: 337px;}
+			.searchinput input{border: none;height: 100%;width: 95%;line-height: 14px;text-indent: 1em;}
+			.searchbnt{width: 98px;height: 34px;background: #F60;color: #FFF;text-indent: 0;
+						font: bolder 14px/34px simsun;text-align: center;float: left;border-radius: 0 3px 3px 0;text-decoration: none;}
+			.hot{margin-top: 4px;overflow: hidden;clear: both;line-height: 29px;}
+			.hot a{margin: 0 6px;color: #767676;}
+			.hot b{margin: 0 8px;color: #767676;}
+			/*头部底部*/
+			#headfoot{width: 100%;background-color: #10286C;}
+			.headfoot{position: relative;height: 40px;}
+			.headfoot .menu{color: #484848;cursor: default;display: block;font-family: tahoma, 宋体;font-size: 12px;height: 40px;
+							left: 0px;line-height: 18px;position: absolute;text-align: left;top: 0px;width: 179px;z-index: 10;background-color: #F60;}
+			.menu .menuTitle{color: white;line-height: 40px;display: block;width:100%;height: 100%;}
+			.menuTitle span{margin:0 12px 0 20px;font-weight: bold;}
+			.headfoot .hotPlate{position: absolute;left: 189px;top: 0;z-index: 11;}
+			.hotPlate li{float: left;}
+			.hotPlate a{color: white; line-height: 40px;padding: 0 20px; height: 100%;display: block;}
+			.hotPlate a:hover{background-color: #295dd7;}
+			.shopcar{position: absolute;right: 0;top: 0;height: 40px;z-index: 1;}
+			.shoppingcart,.collection{border: 2px solid #F60;height: 40px;float: left;position: relative;background-color: #F60;}
+			.shoppingcart a,.collection a{color: white;padding: 0 29px 0 13px;margin-top: 8px;height: 100%;width: 100%;display:inline-block;}
+			.shoppingcartinner,.collectioninner{min-height: 100px;border: 2px solid #F60;z-index: 2;position: absolute;top: 38px;}
+			.shoppingcartinner{left: -2px;right: -114px;display: none;}
+			.collectioninner{left: -127px;right: -2px;display: none;}
+			.shoppingcart:hover,.collection:hover{background-color: white; border-bottom: none;}
+			.shoppingcart:hover .shoppingcartinner,.collection:hover .collectioninner{display: block;border-top: none;background-color: white;}
+			.shoppingcart:hover a,.collection:hover a{color: #767676;}
+			.shoppingcartinner i{color: #C0C0C0;text-align: center;display: block;padding-top: 45px;}
+			.shoppingcartinner i:before{padding-right: 5px;}
+			.collectioninner p{float: left;margin: 45px 0 0 50px;color: #C0C0C0;}
+			.collectioninner a{float: left;width: 40px;height: 24px;background-color: #F60;padding: 0;margin: 0;text-align: center;margin-top: 45px;line-height: 24px;
+								margin-left: 5px;border-radius: 3px;}
+			.menuinner{position: absolute;top:38px;left: 0px;right: 0px;border: solid 2px #f60;background-color: white;}
+			.menuinner li{border-bottom: solid 1px gainsboro;background-color: white;}
+			.menuinner li dl{margin: 0;}
+			.menuinner li dd{display:none;position: absolute;left: 139px;top: -8px;width: 817px;z-index: 3;height: 488px;border: solid 1px gainsboro;}
+			.menuinner li:hover{background-color: orange;}
+			.menuinner li:hover dd{display: block;background-color: white;}
+			.innerdt{height: 75px;padding: 10px 15px 0 20px;line-height: 24px;}
+			.innerdt:before{position: absolute;left: 5px;top: 10px;}
+			.innerdt .himpot a{font-size: 14px;font-weight: bold;color: black;}
+			.innerdt .himpot i{position: absolute;right: 20px;}
+			.innerdt .hsmell a{margin-left: 5px;}
+			.hotBrand { height:165px;width: 207px;margin: 17px 20px 0 0 ;position: absolute;top: 0;right: 0;}
+			.hotBrand p{font-size: 14px;font-weight: bold;line-height: 24px;}
+			.hotBrand a{width: 100px;height: 40px;float: left;background-image: url(../img/indeximg/asus.jpg);}
+			.sgt_1{width: 500px; float: left;margin: 20px 0;}
+			.sgt_1 p{float: left;padding:0 20px;font-weight: bold;}
+			.sgt_1 .fenlei{float: left;width: 400px;line-height: 25px;}
+		</style>
+	<body>
+		<div id="headTop">
+			<div class="headTop">
+				<ul class="leftul">
+					<li><i class="fa fa-mobile-phone fa-lg">&nbsp;</i><a href="#">掌上新蛋</a></li>
+					<li><i class="fa fa-users">&nbsp;</i><a href="#">企业团购</a></li>
+				</ul>
+				<div class="topRight">
+					<div class="user">
+						<span class="usera">
+							<a href="Register_1.html">注册</a>
+							<b>|</b>
+							<a href="log_in.html">登录</a>
+						</span>
+						<span>晚上好，欢迎来到新蛋购物！</span>
+					</div>
+					<ul class="myuse">
+						<li><a href="#">我的订单</a></li>
+						<li class="mynew">
+							<a href="#">我的新蛋</a>
+							<i class="fa fa-angle-down"></i>
+							<div class="hidden_1">
+								请 <a href="log_in.html">登录</a> 后查看
+							</div>
+						</li>
+						<li><a href="#">帮助中心</a></li>
+						<li class="mynew">
+							<a href="#">客户服务</a>
+							<i class="fa fa-angle-down"></i>
+							<div class="hidden_2">
+								<div>
+									<p class="pfist">400-820-4400</p>
+									<p class="psecond">021-67072999</p>
+									<p class="plast">每天 9:00 - 18:00</p>
+								</div>
+								<div class="hidden_2_a">
+									<a href="#">在线咨询</a>
+									<a href="#">邮件我们</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="headbody">
+			<div class="logo">
+				<a href="index.html"><img src="../img/indeximg/logo.jpg"/></a>
+			</div>
+			<div class="search">
+				<div class="searchinput">
+					<input type="text" placeholder="神券归来 PHONE狂再续" />
+					<i class="fa fa-microphone"></i>
+				</div>
+				<a href="page.html" class="searchbnt">搜索</a>
+				<p class="hot">
+					<a href="#">移动硬盘</a>
+					<b>|</b>
+					<a href="#">iPhone7</a>
+					<b>|</b>
+					<a href="#">mate8</a>
+					<b>|</b>
+					<a href="#">Thinkpad</a>
+					<b>|</b>
+					<a href="#">行车记录仪</a>
+				</p>
+			</div>
+			<div class="sevenday">
+				<a href="#"><img src="../img/indeximg/sevenday.gif"/></a>
+			</div>
+		</div>
+		
+		
+		<div id="headfoot">
+			<div class="headfoot">
+				<div class="menu">
+					<a href="#" class="menuTitle"><span>全部商品分类</span><i class="fa fa-angle-down" style="color: white;font-weight: bold;"></i></a>
+					<ul class="menuinner">
+						<li>
+							<dl class="innerdl_1">
+								<dt>
+									<div class="innerdt fa fa-plane">
+										<div class="himpot"><a href="#">海外直购</a><i class="fa fa-angle-right fa-2x"></i></div>
+										<div class="hsmell">
+											<a href="#">影音</a>
+											<a href="#">固态硬盘</a>
+											<a href="#">奶粉</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<div class="segmentation">
+										<div class="sgt_1">
+												<p>大分类1</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类1</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类1</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类1</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+												<div class="sgt_1">
+												<p>大分类1</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										</div>
+									</div>
+									<div class="hotBrand">
+										<p>热门品牌</p>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="innerdl_2">
+								<dt>
+									<div class="innerdt fa fa-plane">
+										<div class="himpot"><a href="#">海外直购</a><i class="fa fa-angle-right fa-2x"></i></div>
+										<div class="hsmell">
+											<a href="#">影音</a>
+											<a href="#">固态硬盘</a>
+											<a href="#">奶粉</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<div class="segmentation">
+										<div class="sgt_1">
+												<p>大分类2</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类2</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类2</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类2</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+												<div class="sgt_1">
+												<p>大分类2</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										</div>
+									</div>
+									<div class="hotBrand">
+										<p>热门品牌</p>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="innerdl_3">
+								<dt>
+									<div class="innerdt fa fa-plane">
+										<div class="himpot"><a href="#">海外直购</a><i class="fa fa-angle-right fa-2x"></i></div>
+										<div class="hsmell">
+											<a href="#">影音</a>
+											<a href="#">固态硬盘</a>
+											<a href="#">奶粉</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<div class="segmentation">
+										<div class="sgt_1">
+												<p>大分类3</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类3</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类3</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类3</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+												<div class="sgt_1">
+												<p>大分类3</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										</div>
+									</div>
+									<div class="hotBrand">
+										<p>热门品牌</p>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="innerdl_4">
+								<dt>
+									<div class="innerdt fa fa-plane">
+										<div class="himpot"><a href="#">海外直购</a><i class="fa fa-angle-right fa-2x"></i></div>
+										<div class="hsmell">
+											<a href="#">影音</a>
+											<a href="#">固态硬盘</a>
+											<a href="#">奶粉</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<div class="segmentation">
+										<div class="sgt_1">
+												<p>大分类4</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类4</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类4</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类4</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+												<div class="sgt_1">
+												<p>大分类4</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										</div>
+									</div>
+									<div class="hotBrand">
+										<p>热门品牌</p>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="innerdl_5">
+								<dt>
+									<div class="innerdt fa fa-plane">
+										<div class="himpot"><a href="#">海外直购</a><i class="fa fa-angle-right fa-2x"></i></div>
+										<div class="hsmell">
+											<a href="#">影音</a>
+											<a href="#">固态硬盘</a>
+											<a href="#">奶粉</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<div class="segmentation">
+										<div class="sgt_1">
+												<p>大分类5</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类5</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类5</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										<div class="sgt_1">
+												<p>大分类5</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+												<div class="sgt_1">
+												<p>大分类5</p>
+												<div class="fenlei">
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+													<b>|</b>
+													<a href="#">分类1</a>
+												</div>
+										</div>
+										</div>
+									</div>
+									<div class="hotBrand">
+										<p>热门品牌</p>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+										<a href="#"></a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<ul class="hotPlate">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">限时抢购</a></li>
+					<li><a href="#">团团赚</a></li>
+					<li><a href="#">海外直购</a></li>
+					<li><a href="#">爱车配</a></li>
+					<li><a href="#">二手宝库</a></li>
+				</ul>
+				<div class="shopcar">
+					<div class="shoppingcart">
+						<a href="shopcar.html">购物车&nbsp;<span style="color: orange;">0</span>&nbsp;件<i class="fa fa-angle-down" style="color: white;margin-left: 10px;"></i></a>
+						<div class="shoppingcartinner">
+							<i class="fa fa-shopping-cart">您还没有购买商品,快去挑选吧！</i>
+						</div>
+					</div>
+					<div class="collection">
+						<a href="#">收藏提醒<i class="fa fa-angle-down" style="color: white;margin-left: 10px;"></i></a>
+						<div class="collectioninner">
+							<p>请登录后查看</p>
+							<a href="#" style="color: white;">登录</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>

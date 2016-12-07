@@ -1,0 +1,112 @@
+
+		/*信息链接栏*/
+		img{display: block;}
+		#topTop,#topBottom{background-color: #F0F0F0;}
+		.topTop{width: 1200px;height: 42px;line-height: 42px;}
+		.topTop>p{float: left;}
+		.topTop>div{float: right;}
+		.topTop>div>span{float: left;}
+		.topTop>div>a{float: left;width: 42px;height: 32px;border: dashed 1px #D9D9D9;margin-right: 3px;margin-top: 5px;}
+		.topTop_bnt{float: left;width: 67px;height: 34px;line-height: 34px;border: solid 1px darkgray;text-align: center;background-color: #D9D9D9;margin-top: 5px;cursor: pointer;}
+		.shopsuccess{display: none;position: absolute;right: 0;top: -120px;z-index: 1;height: 117px;width: 484px;padding: 20px 0 0 94px;background-color: #ECECEC;color: #000000;border: solid 1px #D5D5D5;cursor: default;}
+		.shopsuccess p{margin-bottom: 15px; text-align: left;}
+		.shopsuccess .shopsuccess_bnt_1,.shopsuccess .shopsuccess_bnt_2{float: left; height: 32px;font: 15px "微软雅黑";line-height: 32px;border: solid 1px #262626;border-radius: 5px;margin-right: 5px;padding: 0 19px;cursor: pointer;}
+		/*tab操作栏*/
+		.topBottom{width: 1200px;margin: 0 auto;height: 57px;padding-top: 18px;}
+		.topBottom li{float: left;padding: 0 23px;height: 39px;cursor: pointer;}
+		.topBottom li.current{border-top: solid 3px #FF6600; background: white;}
+		.topBottom li span{display: block;margin-top: 14px;}
+		.topBottom p{float: right;line-height: 30px;}
+		.topBottom input{float: left;margin: 9px 5px 0 0;}
+		/*详情内容*/
+		#detailed_main{width: 1200px;margin: 0 auto;}
+		#detailed_main ul{display: none;}
+		/*详情页*/
+		.main_main{height: 557px;padding-top: 23px;position: relative;}
+		.main_main_bigph{float: left;width: 490px;height: 507px;}
+		.main_main_bigph img{display: none;width: 450px;height: 338px;}
+		.main_main_smallph{position: absolute;bottom: 40px;left: 50px;}
+		.main_main_smallph img{float: left;}
+		.main_main_smallph img:hover{border: solid 1px #FF6600;}
+		.main_h{float: left;margin-bottom: 3px;font:bold 20px "微软雅黑";}
+		.main_text{width: 511px;height: 522px;margin-top: 7px;float: left;border-right: solid 1px #D9D9D9;}
+		.main_text p{margin-bottom: 20px;}
+		.main_text_size:after{content: "";height: 0;display: block;clear: both;overflow: hidden;visibility: hidden;}
+		.main_text_size>i,.main_text_cont>i{float: left;}
+		.main_text_size>span{padding: 8px 6px 8px 6px;margin-right: 10px;float: left;border: solid 1px #D7D7D7;cursor: pointer;}
+		.main_text_cont:after{content: "";height: 0;display: block;clear: both;overflow: hidden;visibility: hidden;}
+		.main_text_cont>.plus,.main_text_cont>.less{height: 30px;width: 24px;float: left;text-align: center;line-height: 28px;border: solid 1px #D7D7D7;cursor: pointer;}
+		.main_text_cont>.cont{height: 30px;line-height: 28px;text-align: center;width: 70px; border-bottom: solid 1px #D7D7D7;border-top:  solid 1px #D7D7D7;float: left;}
+		.main_text_chose{margin-bottom: 10px;height: 38px;color: #FF6600;}
+		.main_text_bnt{padding: 19px 19px 3px 19px;height: 137px;margin-right: 30px;background-color: #F0F0F0;position: relative;}
+		.main_text_bnt a{float: left;height: 47px;width: 204px;margin: 0 15px 18px 0; background: #FF6600;color: white;text-align: center;font: 18px "微软雅黑";line-height: 49px;}
+		.main_ph{margin-top: 50px;padding-top: 20px;border-top: solid 1px #D5D5D5;}
+		/*评论页*/
+		.pinglun_head_bottom{height: 50px;border-top: solid 3px #FF6600;border-bottom: solid 2px #D7D7D7;background-color:#F0F0F0 ; margin-top: 10px;}
+		.pinglun_head_bottom>ul{float: left; display: block!important;}
+		.pinglun_head_bottom>ul>li{float: left;padding-left: 20px ;font: 15px "微软雅黑";line-height: 50px;color: #666666;cursor: pointer;}
+		.pinglun_head_bottom>ul>li.current{color: black;}
+		.pinglun_head_bottom>div{float: right;line-height: 30px;cursor: pointer;margin-right: 10px;padding: 0 6px;border: solid 1px #D5D5D5;margin-top: 10px;background-color: white;}
+		.pinglun_head_bottom>div.current{border-color: #FF6600;color: #FF6600;}
+		.pinglun_body_head{padding: 17px 0 7px;}
+		.pinglun_body_head>div{float: left;line-height: 24px;padding: 0 11px 0 16px;margin: 0 5px 10px 0;border: 1px solid #FFD1A8;background: #FCF1D8;border-radius: 3px;cursor: pointer;}
+		.pinglun_body_main>ul{display: block!important;margin-top: 40px;}
+		.pinglun_body_main>ul>li{border-top: solid 1px #D7D7D7;border-bottom: solid 1px #D7D7D7;overflow: hidden;}
+		.PBM_lef{width: 145px;height: 156px;padding-top: 20px;border-right: solid 1px #D7D7D7;float: left;}
+		.PBM_lef>a{float: left;padding-left: 35px;margin-bottom: 10px;}
+		.PBM_lef>a>img{width: 60px;height: 60px;}
+		.PBM_lef>span{float: left;margin-left: 40px;}
+		.PBM_right{float: left;padding-left: 30px;}
+		.PBM_right_top{padding: 15px 0 5px;overflow: hidden;border-bottom: solid 1px #D7D7D7;width: 1000px;}
+		.PBM_right_top>span{float: left;margin-top:8px ;}
+		.PBM_right_top>div{float: left;line-height: 25px;cursor: pointer;margin-right: 10px;padding: 0 6px;border: solid 1px #D5D5D5;background-color: white;border-radius: 3px;margin-bottom: 10px;}
+		.PBM_right_body>p{margin: 10px 0;}
+		.PBM_right_body>._my_good{color: darkgray;margin-top: 15px;}
+		.PBM_right_body>._my_foot{margin-top: 25px;}
+		.PBM_right_body>._my_foot>a{float: right;margin-left: 5px;}
+		.pinglun_body_main_foot{line-height: 24px;clear: both;overflow: hidden;margin: 15px 0 20px;}
+		.pinglun_body_main_foot>div{float: right;padding: 0 6px;margin-left: 5px;border: solid 1px #D7D7D7;cursor: pointer;}
+		.pinglun_body_main_foot>div:hover{border-color: #FF6600;}
+		.pinglun_body_main_foot>div.foot_active{border-color: #FF6600;}
+		.pinglun_body_main_foot>span{float: right;}
+		.my_pinglun{padding: 28px 0 20px 20px;background: #F0F0F0;}
+		.my_pinglun>div{margin-bottom: 20px;}
+		.my_pinglun_label{overflow: hidden;}
+		.my_pinglun_label>span{float: left;}
+		.my_pinglun_label>p{float: left;line-height: 24px;padding: 0 11px 0 16px;margin: 0 5px 10px 0;border: 1px solid #D7D7D7;background: white;border-radius: 3px;cursor: pointer;}
+		.my_pinglun_textarea>span{float: left;}
+		.my_pinglun_textarea>textarea{min-height: 160px;min-width: 740px;}
+		.my_pinglun_add{overflow: hidden;border-bottom: solid 1px #DEDEDE;padding-bottom: 35px;margin: 0;}
+		.my_pinglun_add>span{float: left;}
+		.my_pinglun_add>a{color: black;line-height: 34px;width: 100px;height: 34px;border: solid 1px #D7D7D7;text-align: center;float: left;background: white;}
+		.my_pinglun_published{margin-left: 60px;overflow: hidden;padding-top: 30px;}
+		.my_pinglun_published>a{float: left;line-height: 48px;}
+		.my_pinglun_published_bnt{width: 169px;height: 48px;text-align: center;font: 15px "微软雅黑";line-height: 48px;color: white;background: #FF6600;margin-right:30px ;}
+		.my_pinglun_published_bnt:hover{background-color: orange}
+		/*参数页*/
+		.otherhead{width: 1200px;height: 115px;padding: 12px 10px;position: relative;}
+		.otherhead_messege{width: 900px;height: 89px;float: left;}
+		.otherhead_messege img{float: left;}
+		.otherhead_messege p{float: left;width: 750px;margin-bottom: 10px;margin-left: 10px;}
+		.otherhead_bnt{float: right; cursor: pointer;}
+		.otherhead_bnt>p{width: 231px; height: 47px;color: white;background-color: #1C429A;font: 18px "微软雅黑";text-align: center;line-height: 47px;cursor: pointer;}
+		.messegeph{margin: 30px 0 70px;}
+		/*售后页*/
+		.shouhou_text{margin: 30px 0 70px;}
+		.shouhou_text th{background:#EEEEEE ;height: 34px;padding: 6px;border: solid 1px #DEDEDE;width: 1200px;}
+		.shouhou_text ._td1,.shouhou_text ._td2{height: 34px;border: solid 1px #DEDEDE;text-indent: 10px;}
+		.shouhou_text ._td1{width: 15%;}
+		.shouhou_text ._td2{width: 85%;}
+		.shouhou_text ._td3{height:51px ;padding: 16px; border: solid 1px #DEDEDE;}
+		/*质询页*/
+		.zhixun{margin: 0 0 70px;}
+		.zhixun_head{height: 50px;border-top: solid 3px #FF6600;border-bottom: solid 2px #D7D7D7;background-color:#F0F0F0 ;}
+		.zhixun_head>ul{float: left; display: block!important;}
+		.zhixun_head>ul>li{float: left;padding-left: 20px ;font: 15px "微软雅黑";line-height: 50px;color: #666666;cursor: pointer;}
+		.zhixun_head>ul>li.current{color: black;}
+		.zhixun_head>div{float: right;line-height: 30px;cursor: pointer;margin-right: 10px;padding: 0 6px;border: solid 1px #D5D5D5;margin-top: 10px;background-color: white;}
+		.zhixun_head>div.current{border-color: #FF6600;color: #FF6600;}
+		.zhixun_body{min-height: 100px; position:relative;}
+		.zhixun_body p{font-size: 15px;margin-top: 10px;}
+		.zhixun_body input{position: absolute;right: 0;bottom: 0;}
+		

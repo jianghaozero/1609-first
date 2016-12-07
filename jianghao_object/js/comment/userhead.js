@@ -1,0 +1,1 @@
+$(function(){$("#userHead").load("comment/userhead.html?_=" + Math.random())})

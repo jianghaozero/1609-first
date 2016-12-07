@@ -1,0 +1,13 @@
+.logo_sin{width: 980px;margin: 19px auto;position: relative;}
+.logo_sin p{font-size: 24px;position: absolute;left: 350px;top: 10px;padding-left: 25px;border-left: solid 1px gainsboro;line-height: 50px;font-weight: bold;}
+#registerBody{background-color: #F9F9F9;margin-bottom: 55px;}
+.registerBody{width: 980px;margin: 0 auto;height: 491px;}
+.log_in{text-align: right;line-height: 30px;}
+.flag{margin: 20px auto;width: 655px;height: 30px;background-image:url(../img/register_flag.png) ;background-position: 0 0;}
+.log_input{text-align: center;}
+.log_input div{margin-bottom: 25px;}
+.log_input input{height: 35px;border: solid 1px #FF6600;line-height: 35px;}
+#phone,.bont input{width: 250px;}
+#verificationCode{width: 190px;}
+#vftcodrandom{width: 70px;font-size: 12px;text-align: center;}
+.code span{margin: 0 30px;font-size: 20px;}

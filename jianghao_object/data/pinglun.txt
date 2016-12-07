@@ -1,0 +1,14 @@
+{
+	"totalCount": 35, "pageSize": 10, "result": [
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"},
+		{"id": 1, "src": "../img/pinglun_main.gif", "user": "png005000","level":"黄金会员","label":"容量大","text":"性价比很高的小东西！","good":"容量：2TB  |  颜色：蓝色","time":"2016-01-25 12:47"}
+	]							 
+}	

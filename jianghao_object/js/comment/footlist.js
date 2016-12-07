@@ -1,0 +1,1 @@
+$(function(){$("#htmlFootlist").load("comment/footlist.html?_=" + Math.random())})
